@@ -1,0 +1,289 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #D7D7D7;
+    color: #2EAD97;
+    display: grid;
+    grid-auto-columns: 1fr 2fr 1fr;
+    grid-template-areas: "Parte1 Parte2 Parte3";
+    gap: 10px;
+    height: 140px;
+}
+
+#Part1 {
+    grid-area: Parte1;
+    height: 140px;
+}
+
+#LogoTipo {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+#Lado {
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 4px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+#Pesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-area: Parte2;
+    height: 140px;
+}
+
+#BarraPesquisa {
+    width: 80%;
+    border-radius: 30px;
+    height: 20px;
+    margin-left: 8%;
+    padding: 20px;
+    border: none;
+}
+
+#Lupa {
+    width: 60px;
+    height: 60px;
+}
+
+#Form {
+    margin-top: 12%;
+}
+
+.Voltar {
+    background: transparent;
+    border: none;
+    color: #2EAD97;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+main {
+    background-color: #2E2E2E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#Otimize{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#InfoNos {
+    width: 68%;
+    margin-left: 18%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top: 20px;
+}
+
+#Nos {
+    font-size: 60px;
+    font-weight: bold;
+}
+#ContainersCard{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 4%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 20%;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.container p{
+    text-align: justify;
+    font-size: 18px;
+}
+.container a{
+    text-decoration: none;
+    background-color:#0d6efd;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 30%;
+    font-weight: bold;
+    font-size: 16px;
+}
+#ContainerImagem{
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+}
+#ContainerImagem img {
+    width: 600px;
+}
+#subcontainerImg{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#subcontainerImg p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: bold;
+}
+#subcontainerImg h1{
+    color: #0d6efd;
+}
+#subcontainerImg a{
+    text-decoration: none;
+    background-color:#0d6efd;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 13%;
+    font-weight: bold;
+    font-size: 16px;
+}
+#ContainerP1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.SubContainer input {
+    width: 90%;
+    padding: 6px;
+    border: none;
+}
+
+.SubContainer textarea {
+    border: none;
+    margin-bottom: 10px;
+    width: 93.4%;
+}
+
+.SubContainer {
+    width: 44%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#FormDuv {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#BtnEnviar {
+    border: none;
+    background-color: #2EAD97;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#Links ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+#Links li {
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#Links a {
+    text-decoration: underline #7B6C6C;
+    color: #7B6C6C;
+    background-color: #FFFFFF;
+}
+
+#IconsFoot {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-start;
+}
+
+#IconsFoot {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-start;
+}
+
+#ImgFoot {
+    display: grid;
+    width: 200px;
+    grid-template-rows: 0.4fr 0.4fr;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-areas:
+        "Twitter TikTok"
+        "Pinterest Insta";
+    grid-gap: 5px;
+}
+
+#IconInsta {
+    width: 50px;
+    height: 40px;
+    grid-area: Insta;
+}
+
+#IconTikTok {
+    width: 46px;
+    height: 40px;
+    grid-area: TikTok;
+}
+
+#IconPinterest {
+    width: 60px;
+    height: 40px;
+    grid-area: Pinterest;
+}
+
+#IconTwitter {
+    width: 60px;
+    height: 40px;
+    grid-area: Twitter;
+}
